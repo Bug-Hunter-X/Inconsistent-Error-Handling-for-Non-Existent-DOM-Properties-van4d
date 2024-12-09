@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Solution using optional chaining (modern browsers)
+    alert(myDiv?.nonExistentProperty);
+
+    //Alternative solution: checking for property existence
+    if (myDiv.hasOwnProperty('nonExistentProperty')) {
+      alert(myDiv.nonExistentProperty);
+    } else {
+      console.log("Property does not exist.");
+    }
+  </script>
+</body>
+</html>
