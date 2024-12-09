@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Incorrectly accessing a non-existent property
+    // This will throw an error in some browsers, but not all.
+    // It also might not throw an error in older browsers
+    alert(myDiv.nonExistentProperty);
+  </script>
+</body>
+</html>
